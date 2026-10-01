@@ -90,28 +90,28 @@
 <a href="https://github.com/AlJasser-AlGhamdi/scan-to-controls">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/scan-to-controls-dark.svg">
-  <img alt="scan-to-controls: Tiered-evidence toolkit for Saudi SME cybersecurity compliance (31 checks · 422 tests · Apache-2.0)" src="assets/cards/scan-to-controls-light.svg" width="49%">
+  <img alt="scan-to-controls: Tiered-evidence toolkit for Saudi SME cybersecurity compliance (31 checks · 422 tests · Apache-2.0)" src="assets/cards/scan-to-controls-light.svg">
 </picture>
 </a>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/phishing-dark.svg">
-  <img alt="Phishing Detection System: Real-time classification of email text, embedded links and domain reputation (F1 0.92 held out), code private" src="assets/cards/phishing-light.svg" width="49%">
+  <img alt="Phishing Detection System: Real-time classification of email text, embedded links and domain reputation (F1 0.92 held out), code private" src="assets/cards/phishing-light.svg">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/stolen-vehicle-dark.svg">
-  <img alt="Stolen Vehicle Detection: YOLOv8 pipeline matching plates and vehicle features against a stolen-vehicle database (94.3% accuracy at 28 fps), code private" src="assets/cards/stolen-vehicle-light.svg" width="49%">
+  <img alt="Stolen Vehicle Detection: YOLOv8 pipeline matching plates and vehicle features against a stolen-vehicle database (94.3% accuracy at 28 fps), code private" src="assets/cards/stolen-vehicle-light.svg">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/apk-scanner-dark.svg">
-  <img alt="Android Vulnerability Scanner: Static APK analysis for insecure storage, exposed components and weak cryptography (~95% detection on 100+ apps), code private" src="assets/cards/apk-scanner-light.svg" width="49%">
+  <img alt="Android Vulnerability Scanner: Static APK analysis for insecure storage, exposed components and weak cryptography (~95% detection on 100+ apps), code private" src="assets/cards/apk-scanner-light.svg">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/real-estate-dark.svg">
-  <img alt="Real Estate Market Intelligence: Generative-AI valuation engine over Ministry of Justice land records (1.4M+ records), code private" src="assets/cards/real-estate-light.svg" width="49%">
+  <img alt="Real Estate Market Intelligence: Generative-AI valuation engine over Ministry of Justice land records (1.4M+ records), code private" src="assets/cards/real-estate-light.svg">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/saudi-guider-dark.svg">
-  <img alt="Saudi Guider: Bilingual Arabic and English travel assistant with conversation memory (Arabic · English), code private" src="assets/cards/saudi-guider-light.svg" width="49%">
+  <img alt="Saudi Guider: Bilingual Arabic and English travel assistant with conversation memory (Arabic · English), code private" src="assets/cards/saudi-guider-light.svg">
 </picture>
 </p>
 

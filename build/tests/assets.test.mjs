@@ -76,8 +76,8 @@ test('cards: private projects carry a tag, public ones do not, and all are the s
   assert.deepEqual(checkSvg(priv), []);
   assert.match(priv, /class="tag private"/);
   assert.doesNotMatch(pub, /class="tag private"/);
-  assert.match(pub, /viewBox="0 0 580 200"/);
-  assert.match(priv, /viewBox="0 0 580 200"/);
+  assert.match(pub, /viewBox="0 0 390 170"/);
+  assert.match(priv, /viewBox="0 0 390 170"/);
 });
 
 test('cards: long description lines wrap instead of overflowing the card', () => {

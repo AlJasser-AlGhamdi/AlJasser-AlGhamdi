@@ -65,7 +65,6 @@ function projects(content) {
       dark: `${A}/cards/${p.id}-dark.svg`,
       light: `${A}/cards/${p.id}-light.svg`,
       alt: `${p.title}: ${p.line} (${p.metric})${p.private ? ', code private' : ''}`,
-      width: '49%',
       href: p.href,
     }),
   );

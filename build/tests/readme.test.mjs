@@ -51,10 +51,11 @@ test('arena table lists every event and hides the long tail in details', () => {
   assert.ok(details > -1 && md.indexOf('Dean of Student Affairs') > details);
 });
 
-test('project cards are paired at 49% width and private ones are not linked to a repo', () => {
+test('project cards use intrinsic size (no percentage width) and private ones are not linked to a repo', () => {
   const md = renderReadme(content, { generated });
   assert.ok(md.includes('<a href="https://github.com/x/scan-to-controls">'));
-  assert.equal((md.match(/assets\/cards\/[a-z0-9-]+-light\.svg" width="49%"/g) ?? []).length, 3);
+  assert.equal((md.match(/assets\/cards\/[a-z0-9-]+-light\.svg">/g) ?? []).length, 3);
+  assert.doesNotMatch(md, /cards\/[a-z0-9-]+-light\.svg" width=/);
   assert.doesNotMatch(md, /<a href="[^"]*phishing/);
 });
 
