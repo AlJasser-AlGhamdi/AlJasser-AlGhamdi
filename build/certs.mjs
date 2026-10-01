@@ -33,10 +33,12 @@ export function render(group, { variant = 'dark', still = false } = {}) {
     ...placed.map((c, i) => {
       const code = run.place(c.item.code, { font: 'mono-medium', size: codeSize, x: chipPad, y: 22.5 });
       const issuer = run.place(c.item.issuer, { font: 'mono', size: issuerSize, x: chipPad + c.codeW + sep, y: 22.5 });
+      // The animated element must not carry the positioning transform: the CSS
+      // transform animation would override the attribute and stack every chip at the origin.
       return (
-        `<g class="chip" transform="translate(${r2(c.x)} ${r2(c.y)})" style="animation-delay:${r2(i * 0.07)}s">` +
+        `<g transform="translate(${r2(c.x)} ${r2(c.y)})"><g class="chip" style="animation-delay:${r2(i * 0.07)}s">` +
         `<rect x="0.5" y="0.5" width="${c.w - 1}" height="${chipH - 1}" rx="9" fill="${t.panel}" stroke="${t.line}"/>` +
-        `<g fill="${t.fg}">${code.uses}</g><g fill="${t.muted}">${issuer.uses}</g></g>`
+        `<g fill="${t.fg}">${code.uses}</g><g fill="${t.muted}">${issuer.uses}</g></g></g>`
       );
     }),
   ].join('');
