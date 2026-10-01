@@ -15,10 +15,10 @@ export function render(project, { variant = 'dark', still = false } = {}) {
   const tagW = tag.width + 20;
   const tagColor = isPrivate ? t.muted : t.accent;
 
-  const title = run.place(project.title, { font: 'serif', size: 34, x: PAD, y: 74 });
-  const lines = wrapLines(project.line, { font: 'mono', size: 13.5, maxWidth: W - PAD * 2, maxLines: 2 });
-  const lineRuns = lines.map((l, i) => run.place(l, { font: 'mono', size: 13.5, x: PAD, y: 108 + i * 21 }));
-  const metric = run.place(project.metric, { font: 'mono-medium', size: 14.5, x: PAD + 16, y: 173 });
+  const title = run.place(project.title, { font: 'serif', size: 36, x: PAD, y: 72 });
+  const lines = wrapLines(project.line, { font: 'mono', size: 15, maxWidth: W - PAD * 2, maxLines: 2 });
+  const lineRuns = lines.map((l, i) => run.place(l, { font: 'mono', size: 15, x: PAD, y: 106 + i * 23 }));
+  const metric = run.place(project.metric, { font: 'mono-medium', size: 16, x: PAD + 16, y: 174 });
 
   const arrow = isPrivate
     ? ''

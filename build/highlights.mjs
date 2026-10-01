@@ -4,7 +4,7 @@ import { createGlyphRun, wrapLines } from './lib/text.mjs';
 import { svgDoc, theme, r2 } from './lib/svg.mjs';
 
 const LAYOUT = {
-  desktop: { W: 1200, cols: 5, rowH: 150, padX: 24, value: 46, label: 12.5, sub: 11, valueY: 64, labelY: 94, lh: 18, subY: 136 },
+  desktop: { W: 1200, cols: 5, rowH: 156, padX: 24, value: 50, label: 14, sub: 12, valueY: 66, labelY: 97, lh: 20, subY: 142 },
   mobile: { W: 390, cols: 2, rowH: 124, padX: 16, value: 32, label: 11.5, sub: 10, valueY: 46, labelY: 72, lh: 16, subY: 110 },
 };
 
