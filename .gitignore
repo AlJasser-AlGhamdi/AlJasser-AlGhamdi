@@ -1,0 +1,7 @@
+build/node_modules/
+build/src/proofs/
+build/src/*-proof.png
+build/src/raven-trace.png
+build/src/raven-trace.svg
+dist/
+profile-3d-contrib/
