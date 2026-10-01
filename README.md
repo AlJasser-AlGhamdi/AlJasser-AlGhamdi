@@ -115,4 +115,18 @@
 </picture>
 </p>
 
+## Activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/3d-dark.svg">
+  <img alt="Contribution calendar rendered as an isometric 3D graph, regenerated daily" src="https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/3d-light.svg" width="100%">
+</picture>
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/activity-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/activity-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/activity-dark.svg">
+  <img alt="Year in ink: one dot per day, sized by contributions, regenerated daily" src="https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/activity-light.svg" width="100%">
+</picture>
+
 <p align="center"><sub>Jeddah, Saudi Arabia</sub></p>

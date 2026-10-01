@@ -1,0 +1,12 @@
+{
+  "threeD": {
+    "dark": "https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/3d-dark.svg",
+    "light": "https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/3d-light.svg"
+  },
+  "activity": {
+    "dark": "https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/activity-dark.svg",
+    "light": "https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/activity-light.svg",
+    "mobileDark": "https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/activity-mobile-dark.svg",
+    "mobileLight": "https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/activity-mobile-light.svg"
+  }
+}
