@@ -2,7 +2,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/hero-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img alt="AlJasser AlGhamdi: Cybersecurity and AI researcher in Jeddah. I build defenses for machine-learning systems and security operations, and captain CTF teams for sport." src="assets/hero-light.svg" width="100%">
+  <img alt="AlJasser AlGhamdi: Cybersecurity Researcher, AI Researcher, CTF Captain, KAUST Academy Alumnus" src="assets/hero-light.svg" width="100%">
 </picture>
 
 <p align="center">
@@ -28,7 +28,7 @@
 </a>
 </p>
 
-<p align="center">Cybersecurity and AI researcher in Jeddah. I build defenses for machine-learning systems and security operations, and captain CTF teams for sport.</p>
+<p align="center">Cybersecurity and AI researcher. I build defenses for machine-learning systems and security operations, and captain CTF teams for sport.</p>
 
 > [!NOTE]
 > Open to research collaboration in ML security, SOC automation and digital forensics.
@@ -37,33 +37,27 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/highlights-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/highlights-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/highlights-dark.svg">
-  <img alt="1 of 50 KAUST Academy Cybersecurity; 1 of 100 KAUST Academy AI; 3× 1st place, CTF; Top 5 Saudi teams, Black Hat MEA 2025; 4.65 / 5 GPA, BSc Information Systems" src="assets/highlights-light.svg" width="100%">
+  <img alt="1 of 50 KAUST Academy Cybersecurity; 1 of 100 KAUST Academy AI; 3× 1st place, CTF; Top 5 Saudi teams, Black Hat MEA 2025" src="assets/highlights-light.svg" width="100%">
 </picture>
 
 ## Arena
 
-| Event | Result | Field |
-|---|---|---|
-| Black Hat MEA CTF 2025 | Top 5 Saudi teams, captain, first blood | national finals |
-| KAUST Academy CTF | 1st place | 50 participants |
-| King Abdulaziz University CTF | 1st place | 50 teams |
-| Jeddah International College CTF | 1st place | 30 teams |
-| KAUST Academy Cybersecurity hackathon | Top 3 in the Kingdom, SIEM and SOAR platform for Jarir | led a team of 5 |
-| KAUST Academy AI program competition | 3rd place | 100 selected from 17,000+ |
-| KAUST Academy Kaggle tournament | Top 5 | program-wide |
-| Aramco National Consulting Championship | Top 100, cases judged by Deloitte | 7,000+ students, 10 universities |
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/arena-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/arena-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/arena-dark.svg">
+  <img alt="Arena: Top 5, Black Hat MEA CTF 2025 (Saudi teams · team captain · first blood · national finals); 1st, KAUST Academy CTF (50 participants); 1st, King Abdulaziz University CTF (50 teams); 1st, Jeddah International College CTF (30 teams); Top 3, KAUST Academy Cybersecurity hackathon (in the Kingdom · SIEM and SOAR platform commissioned by Jarir · led a team of 5); 3rd, KAUST Academy AI program competition (among 100 selected from 17,000+); Top 5, KAUST Academy Kaggle tournament (program-wide); Top 100, Aramco National Consulting Championship (7,000+ students from 10 universities · cases judged by Deloitte)" src="assets/arena-light.svg" width="100%">
+</picture>
 
 <details>
 <summary>More honours</summary>
 
-| Event | Result | Field |
-|---|---|---|
-| Cybersecurity Pioneer Award | King Abdulaziz University | award |
-| Certificate of Excellence, Dean of Student Affairs | 2024–25 and 2025–26 | award |
-| Certificate of Recognition | KAU President | award |
-| Certificate of Appreciation | Dean of FCIT, Cybersecurity Club | award |
-| TechHub3 CTF, KAU | Designed and ran the competition | 100+ participants, 2026 |
-| Cybersecurity Club, KAU | Led the CTF and technical teams, taught 1,000+ students | 2023–2026 |
+- Cybersecurity Pioneer Award: King Abdulaziz University
+- Certificate of Excellence, Dean of Student Affairs: 2024–25 and 2025–26
+- Certificate of Recognition: KAU President
+- Certificate of Appreciation: Dean of FCIT, for the Cybersecurity Club
+- TechHub3 CTF, KAU: designed and ran the competition for 100+ participants, 2026
+- Cybersecurity Club, KAU: led the CTF and technical teams and taught 1,000+ students, 2023–2026
 
 </details>
 
@@ -129,4 +123,9 @@
   <img alt="Year in ink: one dot per day, sized by contributions, regenerated daily" src="https://raw.githubusercontent.com/AlJasser-AlGhamdi/AlJasser-AlGhamdi/output/activity-light.svg" width="100%">
 </picture>
 
-<p align="center"><sub>Jeddah, Saudi Arabia</sub></p>
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg">
+  <img alt="" src="assets/mark-light.svg">
+</picture>
+</p>

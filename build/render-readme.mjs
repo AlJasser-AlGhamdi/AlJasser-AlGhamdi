@@ -12,7 +12,7 @@ function heroBlock(content) {
     light: `${A}/hero-light.svg`,
     mobileDark: `${A}/hero-mobile-dark.svg`,
     mobileLight: `${A}/hero-mobile-light.svg`,
-    alt: `${content.name}: ${content.tagline}`,
+    alt: `${content.name}: ${content.roles ? content.roles.join(', ') : content.tagline}`,
     width: '100%',
   });
 }
@@ -35,14 +35,19 @@ function highlights(content) {
   });
 }
 
-function table(rows) {
-  return ['| Event | Result | Field |', '|---|---|---|', ...rows.map((e) => `| ${e.event} | ${e.result} | ${e.scale} |`)].join('\n');
-}
-
 function arena(content) {
-  let out = `## Arena\n\n${table(content.arena)}`;
+  const alt = `Arena: ${content.arena.map((e) => `${e.rank}, ${e.event} (${e.detail})`).join('; ')}`;
+  let out = `## Arena\n\n${picture({
+    dark: `${A}/arena-dark.svg`,
+    light: `${A}/arena-light.svg`,
+    mobileDark: `${A}/arena-mobile-dark.svg`,
+    mobileLight: `${A}/arena-mobile-light.svg`,
+    alt,
+    width: '100%',
+  })}`;
   if (content.arenaMore?.length) {
-    out += `\n\n<details>\n<summary>More honours</summary>\n\n${table(content.arenaMore)}\n\n</details>`;
+    const list = content.arenaMore.map((e) => `- ${e.event}: ${e.detail}`).join('\n');
+    out += `\n\n<details>\n<summary>More honours</summary>\n\n${list}\n\n</details>`;
   }
   return out;
 }
@@ -93,6 +98,10 @@ function activity(generated) {
   return `## Activity\n\n${blocks.join('\n\n')}`;
 }
 
+function endMark() {
+  return `<p align="center">\n${picture({ dark: `${A}/mark-dark.svg`, light: `${A}/mark-light.svg`, alt: '' })}\n</p>`;
+}
+
 export function renderReadme(content, { generated = null } = {}) {
   const parts = [
     heroBlock(content),
@@ -104,7 +113,7 @@ export function renderReadme(content, { generated = null } = {}) {
     credentials(content),
     projects(content),
     activity(generated),
-    `<p align="center"><sub>${esc(content.location)}</sub></p>`,
+    endMark(),
   ].filter(Boolean);
   return parts.join('\n\n') + '\n';
 }

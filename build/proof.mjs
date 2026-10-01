@@ -16,10 +16,12 @@ async function items(name) {
       { label: 'desktop', make: (o) => mod.render(content, o) },
       { label: 'mobile', make: (o) => mod.render(content, { ...o, mobile: true }) },
     ];
-    case 'hero': return [
+    case 'hero':
+    case 'arena': return [
       { label: 'desktop', make: (o) => mod.render(content, o) },
       { label: 'mobile', make: (o) => mod.render(content, { ...o, mobile: true }) },
     ];
+    case 'mark': return [{ label: 'mark', make: (o) => mod.render(o) }];
     default: throw new Error(`unknown generator ${name}`);
   }
 }

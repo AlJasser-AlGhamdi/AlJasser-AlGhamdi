@@ -18,7 +18,7 @@ test('hero: desktop and mobile variants are GitHub-safe and sized as designed', 
   const m = hero.render(content, { variant: 'light', mobile: true });
   assert.deepEqual(checkSvg(d), []);
   assert.deepEqual(checkSvg(m), []);
-  assert.match(d, /viewBox="0 0 1200 420"/);
+  assert.match(d, /viewBox="0 0 1200 400"/);
   assert.match(m, /viewBox="0 0 390 \d+"/);
 });
 
@@ -36,6 +36,12 @@ test('hero: the name rises letter by letter and every role gets its own typewrit
   assert.equal(count(d, /<g class="role r\d+"/g), content.roles.length);
   assert.match(d, /steps\(/, 'typewriter uses step timing');
   assert.match(d, /animation-delay/);
+});
+
+test('hero: carries no location or coordinates line', () => {
+  const d = hero.render(content, { variant: 'dark' });
+  assert.doesNotMatch(d, /class="meta"/);
+  assert.doesNotMatch(d, /JEDDAH|Jeddah|21\.54/);
 });
 
 test('hero: dark and light use inverse panels', () => {

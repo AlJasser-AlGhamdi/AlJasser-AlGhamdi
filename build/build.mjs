@@ -8,6 +8,8 @@ import * as highlights from './highlights.mjs';
 import * as certs from './certs.mjs';
 import * as cards from './cards.mjs';
 import * as chips from './chips.mjs';
+import * as arena from './arena.mjs';
+import * as mark from './mark.mjs';
 import { renderReadme } from './render-readme.mjs';
 
 const OUT = path.resolve('../assets');
@@ -28,6 +30,9 @@ for (const variant of ['dark', 'light']) {
   emit(`hero-mobile-${variant}.svg`, hero.render(content, { variant, mobile: true }));
   emit(`highlights-${variant}.svg`, highlights.render(content, { variant }));
   emit(`highlights-mobile-${variant}.svg`, highlights.render(content, { variant, mobile: true }));
+  emit(`arena-${variant}.svg`, arena.render(content, { variant }));
+  emit(`arena-mobile-${variant}.svg`, arena.render(content, { variant, mobile: true }));
+  emit(`mark-${variant}.svg`, mark.render({ variant }));
   for (const link of content.links) emit(`chip-${link.id}-${variant}.svg`, chips.render(link, { variant }));
   for (const group of content.certGroups) emit(`certs-${group.id}-${variant}.svg`, certs.render(group, { variant }));
   for (const project of content.projects) emit(`cards/${project.id}-${variant}.svg`, cards.render(project, { variant }));

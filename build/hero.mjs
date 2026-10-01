@@ -12,18 +12,17 @@ const PERCH_Y = 176; // underside of the serif, in trace units
 const EYE = { x: 239, y: 94 }; // in trace units
 
 const T = { base: 2.6, type: 1.15, hold: 2.7, fade: 0.35, gap: 0.2 };
-const COORDS = 'JEDDAH, SAUDI ARABIA · 21.54° N, 39.17° E';
 
 const LAYOUT = {
   desktop: {
-    W: 1200, H: 420, ravenScale: 1.55, ravenRight: 1130, perchY: 300, ruleX1: 70, ruleX2: 1130,
-    name: { x: 70, y: 250, size: 88, lines: 1 }, meta: { x: 72, y: 170, size: 13.5, anchor: 'start' },
-    role: { x: 70, y: 352, size: 22, cursorH: 24 }, cursorW: 11,
+    W: 1200, H: 400, ravenScale: 1.55, ravenRight: 1130, perchY: 282, ruleX1: 70, ruleX2: 1130,
+    name: { x: 70, y: 232, size: 88, lines: 1 },
+    role: { x: 70, y: 334, size: 22, cursorH: 24 }, cursorW: 11,
   },
   mobile: {
-    W: 390, H: 470, ravenScale: 0.95, ravenCenter: 195, perchY: 190, ruleX1: 24, ruleX2: 366,
-    name: { x: 195, y: 292, size: 50, lines: 2, anchor: 'middle' }, meta: { x: 195, y: 446, size: 10.5, anchor: 'middle' },
-    role: { x: 24, y: 392, size: 15, cursorH: 17 }, cursorW: 8,
+    W: 390, H: 420, ravenScale: 0.95, ravenCenter: 195, perchY: 190, ruleX1: 24, ruleX2: 366,
+    name: { x: 195, y: 292, size: 50, lines: 2, anchor: 'middle' },
+    role: { x: 24, y: 388, size: 15, cursorH: 17 }, cursorW: 8,
   },
 };
 
@@ -92,14 +91,12 @@ export function render(content, { variant = 'dark', mobile = false, still = fals
     })
     .join('');
 
-  const meta = run.place(COORDS, { font: 'mono', size: L.meta.size, letterSpacing: 1.8, x: L.meta.x, y: L.meta.y, anchor: L.meta.anchor });
   const rolePart = roles({ run, roles: content.roles, L, t, still });
 
   const body = [
     `<rect x="0.5" y="0.5" width="${L.W - 1}" height="${L.H - 1}" rx="20" fill="${t.bg}" stroke="${t.line}"/>`,
     `<rect x="1" y="1" width="${L.W - 2}" height="${L.H - 2}" rx="19.5" fill="url(#vg)"/>`,
     `<rect class="rule" x="${L.ruleX1}" y="${L.perchY - 1}" width="${L.ruleX2 - L.ruleX1}" height="2" fill="${t.accent}"/>`,
-    `<g class="meta" fill="${t.muted}">${meta.uses}</g>`,
     nameBody,
     `<g transform="translate(${r2(tx)} ${r2(ty)}) scale(${s})">` +
       `<g clip-path="url(#perch)"><path class="raven" d="${RAVEN_D}" fill="${t.fg}" fill-rule="evenodd" pathLength="1"/></g>` +
@@ -121,16 +118,16 @@ export function render(content, { variant = 'dark', mobile = false, still = fals
       `.rule{transform:scaleX(0);transform-origin:${L.ruleX1}px ${L.perchY}px;animation:sweep 1.1s cubic-bezier(.6,0,.2,1) 1.3s forwards}` +
       '@keyframes sweep{to{transform:scaleX(1)}}' +
       '.eye{opacity:.15;animation:pulse 2.8s ease-in-out 3s infinite}@keyframes pulse{0%,100%{opacity:.15}50%{opacity:1}}' +
-      '.meta{opacity:0;animation:fade 1s ease-out 1.6s forwards}@keyframes fade{to{opacity:1}}' +
+      '@keyframes fade{to{opacity:1}}' +
       rolePart.styles;
-  const reduced = '.L,.meta{opacity:1;transform:none}.raven{fill-opacity:1;stroke-dashoffset:0}.rule{transform:none}.eye{opacity:1}' + rolePart.reduced;
+  const reduced = '.L{opacity:1;transform:none}.raven{fill-opacity:1;stroke-dashoffset:0}.rule{transform:none}.eye{opacity:1}' + rolePart.reduced;
   const stillStyles = still ? reduced : '';
 
   return svgDoc({
     width: L.W,
     height: L.H,
     title: `${content.name}: ${content.roles.join(', ')}`,
-    desc: `${COORDS}. A raven perched on an amber rule beside the name.`,
+    desc: 'A raven perched on an amber rule beside the name; a typewriter line cycles the roles.',
     body,
     styles: styles + stillStyles,
     defs,

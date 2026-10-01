@@ -4,17 +4,18 @@ import { renderReadme } from '../render-readme.mjs';
 
 const content = {
   name: 'AlJasser AlGhamdi',
-  tagline: 'Cybersecurity and AI researcher in Jeddah.',
+  tagline: 'Cybersecurity and AI researcher.',
   collaboration: 'Open to research collaboration in ML security.',
   links: [
     { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/x' },
     { id: 'orcid', label: 'ORCID', href: 'https://orcid.org/0000' },
   ],
+  highlights: [{ value: '1 of 50', label: 'KAUST Academy Cybersecurity', sub: 'selected from 4,200+' }],
   arena: [
-    { event: 'KAUST Academy CTF', result: '1st place', scale: '50 participants' },
-    { event: 'Black Hat MEA CTF', result: 'Top 5 Saudi team', scale: 'national finals' },
+    { rank: '1st', event: 'KAUST Academy CTF', detail: '50 participants' },
+    { rank: 'Top 5', event: 'Black Hat MEA CTF', detail: 'national finals' },
   ],
-  arenaMore: [{ event: 'Dean of Student Affairs', result: 'Certificate of Excellence', scale: 'award' }],
+  arenaMore: [{ event: 'Dean of Student Affairs', detail: 'Certificate of Excellence' }],
   certGroups: [
     { id: 'offensive', label: 'Offensive', items: [{ code: 'eCPPT', issuer: 'INE' }, { code: 'eWPTX', issuer: 'INE' }] },
     { id: 'defense', label: 'Defense & DFIR', items: [{ code: 'eCTHP', issuer: 'INE' }] },
@@ -24,7 +25,6 @@ const content = {
     { id: 'phishing', title: 'Phishing Detection System', line: 'Email classifier', metric: 'F1 0.92', private: true },
     { id: 'yolo', title: 'Stolen Vehicle Detection', line: 'YOLOv8 pipeline', metric: '94.3% at 28 fps', private: true },
   ],
-  location: 'Jeddah, Saudi Arabia',
 };
 const generated = { threeD: { dark: 'https://raw.example/3d-dark.svg', light: 'https://raw.example/3d-light.svg' }, activity: { dark: 'https://raw.example/a-dark.svg', light: 'https://raw.example/a-light.svg' } };
 
@@ -44,11 +44,19 @@ test('every link becomes a linked chip picture', () => {
   }
 });
 
-test('arena table lists every event and hides the long tail in details', () => {
+test('arena is a picture (desktop + mobile) with no markdown table, and the long tail is a list in details', () => {
   const md = renderReadme(content, { generated });
-  for (const e of content.arena) assert.ok(md.includes(`| ${e.event} | ${e.result} | ${e.scale} |`), e.event);
+  assert.match(md, /## Arena\n\n<picture>/);
+  assert.match(md, /srcset="assets\/arena-mobile-dark\.svg"/);
+  assert.match(md, /src="assets\/arena-light\.svg"/);
+  assert.doesNotMatch(md, /\|---\|/);
   const details = md.indexOf('<details>');
-  assert.ok(details > -1 && md.indexOf('Dean of Student Affairs') > details);
+  assert.ok(details > -1 && md.indexOf('- Dean of Student Affairs: Certificate of Excellence') > details);
+});
+
+test('arena alt text names every result', () => {
+  const md = renderReadme(content, { generated });
+  assert.ok(md.includes('1st, KAUST Academy CTF (50 participants)'));
 });
 
 test('project cards use intrinsic size (no percentage width) and private ones are not linked to a repo', () => {
@@ -71,11 +79,12 @@ test('generated graphs are referenced from the output branch urls given', () => 
   assert.ok(md.includes(generated.activity.dark) && md.includes(generated.activity.light));
 });
 
-test('has the collaboration note, the location line, and no research section', () => {
+test('has the collaboration note, ends with the raven mark, and mentions neither Jeddah nor research', () => {
   const md = renderReadme(content, { generated });
   assert.match(md, /> \[!NOTE\]\n> Open to research collaboration/);
-  const loc = md.lastIndexOf('Jeddah, Saudi Arabia');
-  assert.ok(loc > md.length * 0.9, 'location line sits at the very end');
+  const markAt = md.lastIndexOf('assets/mark-light.svg');
+  assert.ok(markAt > md.length * 0.9, 'end-mark sits at the very end');
+  assert.doesNotMatch(md, /Jeddah/);
   assert.doesNotMatch(md, /## Research/i);
 });
 

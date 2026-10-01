@@ -1,66 +1,187 @@
 {
   "name": "AlJasser AlGhamdi",
-  "roles": ["Cybersecurity Researcher", "AI Researcher", "CTF Captain", "KAUST Academy Alumnus"],
-  "tagline": "Cybersecurity and AI researcher in Jeddah. I build defenses for machine-learning systems and security operations, and captain CTF teams for sport.",
+  "roles": [
+    "Cybersecurity Researcher",
+    "AI Researcher",
+    "CTF Captain",
+    "KAUST Academy Alumnus"
+  ],
+  "tagline": "Cybersecurity and AI researcher. I build defenses for machine-learning systems and security operations, and captain CTF teams for sport.",
   "collaboration": "Open to research collaboration in ML security, SOC automation and digital forensics.",
-  "location": "Jeddah, Saudi Arabia",
   "links": [
-    { "id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/aljasseralghamdi" },
-    { "id": "orcid", "label": "ORCID", "href": "https://orcid.org/0009-0006-4342-7452" },
-    { "id": "email", "label": "Email", "href": "mailto:AlJasserAlGhamdi@gmail.com" }
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/aljasseralghamdi"
+    },
+    {
+      "id": "orcid",
+      "label": "ORCID",
+      "href": "https://orcid.org/0009-0006-4342-7452"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "href": "mailto:AlJasserAlGhamdi@gmail.com"
+    }
   ],
   "highlights": [
-    { "value": "1 of 50", "label": "KAUST Academy Cybersecurity", "sub": "selected from 4,200+" },
-    { "value": "1 of 100", "label": "KAUST Academy AI", "sub": "selected from 17,000+" },
-    { "value": "3×", "label": "1st place, CTF", "sub": "KAUST · KAU · JIC" },
-    { "value": "Top 5", "label": "Saudi teams, Black Hat MEA 2025", "sub": "captain · first blood" },
-    { "value": "4.65 / 5", "label": "GPA, BSc Information Systems", "sub": "King Abdulaziz University" }
+    {
+      "value": "1 of 50",
+      "label": "KAUST Academy Cybersecurity",
+      "sub": "selected from 4,200+"
+    },
+    {
+      "value": "1 of 100",
+      "label": "KAUST Academy AI",
+      "sub": "selected from 17,000+"
+    },
+    {
+      "value": "3×",
+      "label": "1st place, CTF",
+      "sub": "KAUST · KAU · JIC"
+    },
+    {
+      "value": "Top 5",
+      "label": "Saudi teams, Black Hat MEA 2025",
+      "sub": "captain · first blood"
+    }
   ],
   "arena": [
-    { "event": "Black Hat MEA CTF 2025", "result": "Top 5 Saudi teams, captain, first blood", "scale": "national finals" },
-    { "event": "KAUST Academy CTF", "result": "1st place", "scale": "50 participants" },
-    { "event": "King Abdulaziz University CTF", "result": "1st place", "scale": "50 teams" },
-    { "event": "Jeddah International College CTF", "result": "1st place", "scale": "30 teams" },
-    { "event": "KAUST Academy Cybersecurity hackathon", "result": "Top 3 in the Kingdom, SIEM and SOAR platform for Jarir", "scale": "led a team of 5" },
-    { "event": "KAUST Academy AI program competition", "result": "3rd place", "scale": "100 selected from 17,000+" },
-    { "event": "KAUST Academy Kaggle tournament", "result": "Top 5", "scale": "program-wide" },
-    { "event": "Aramco National Consulting Championship", "result": "Top 100, cases judged by Deloitte", "scale": "7,000+ students, 10 universities" }
+    {
+      "rank": "Top 5",
+      "event": "Black Hat MEA CTF 2025",
+      "detail": "Saudi teams · team captain · first blood · national finals"
+    },
+    {
+      "rank": "1st",
+      "event": "KAUST Academy CTF",
+      "detail": "50 participants"
+    },
+    {
+      "rank": "1st",
+      "event": "King Abdulaziz University CTF",
+      "detail": "50 teams"
+    },
+    {
+      "rank": "1st",
+      "event": "Jeddah International College CTF",
+      "detail": "30 teams"
+    },
+    {
+      "rank": "Top 3",
+      "event": "KAUST Academy Cybersecurity hackathon",
+      "detail": "in the Kingdom · SIEM and SOAR platform commissioned by Jarir · led a team of 5"
+    },
+    {
+      "rank": "3rd",
+      "event": "KAUST Academy AI program competition",
+      "detail": "among 100 selected from 17,000+"
+    },
+    {
+      "rank": "Top 5",
+      "event": "KAUST Academy Kaggle tournament",
+      "detail": "program-wide"
+    },
+    {
+      "rank": "Top 100",
+      "event": "Aramco National Consulting Championship",
+      "detail": "7,000+ students from 10 universities · cases judged by Deloitte"
+    }
   ],
   "arenaMore": [
-    { "event": "Cybersecurity Pioneer Award", "result": "King Abdulaziz University", "scale": "award" },
-    { "event": "Certificate of Excellence, Dean of Student Affairs", "result": "2024–25 and 2025–26", "scale": "award" },
-    { "event": "Certificate of Recognition", "result": "KAU President", "scale": "award" },
-    { "event": "Certificate of Appreciation", "result": "Dean of FCIT, Cybersecurity Club", "scale": "award" },
-    { "event": "TechHub3 CTF, KAU", "result": "Designed and ran the competition", "scale": "100+ participants, 2026" },
-    { "event": "Cybersecurity Club, KAU", "result": "Led the CTF and technical teams, taught 1,000+ students", "scale": "2023–2026" }
+    {
+      "event": "Cybersecurity Pioneer Award",
+      "detail": "King Abdulaziz University"
+    },
+    {
+      "event": "Certificate of Excellence, Dean of Student Affairs",
+      "detail": "2024–25 and 2025–26"
+    },
+    {
+      "event": "Certificate of Recognition",
+      "detail": "KAU President"
+    },
+    {
+      "event": "Certificate of Appreciation",
+      "detail": "Dean of FCIT, for the Cybersecurity Club"
+    },
+    {
+      "event": "TechHub3 CTF, KAU",
+      "detail": "designed and ran the competition for 100+ participants, 2026"
+    },
+    {
+      "event": "Cybersecurity Club, KAU",
+      "detail": "led the CTF and technical teams and taught 1,000+ students, 2023–2026"
+    }
   ],
   "certGroups": [
     {
       "id": "offensive",
       "label": "Offensive",
       "items": [
-        { "code": "eCPPT", "name": "Certified Professional Penetration Tester", "issuer": "INE" },
-        { "code": "eWPTX", "name": "Web Application Penetration Tester eXtreme", "issuer": "INE" },
-        { "code": "eJPT", "name": "Junior Penetration Tester", "issuer": "INE" }
+        {
+          "code": "eCPPT",
+          "name": "Certified Professional Penetration Tester",
+          "issuer": "INE"
+        },
+        {
+          "code": "eWPTX",
+          "name": "Web Application Penetration Tester eXtreme",
+          "issuer": "INE"
+        },
+        {
+          "code": "eJPT",
+          "name": "Junior Penetration Tester",
+          "issuer": "INE"
+        }
       ]
     },
     {
       "id": "defense",
       "label": "Defense & DFIR",
       "items": [
-        { "code": "eCTHP", "name": "Certified Threat Hunting Professional", "issuer": "INE" },
-        { "code": "eCDFP", "name": "Certified Digital Forensics Professional", "issuer": "INE" },
-        { "code": "SSCP", "name": "Systems Security Certified Practitioner", "issuer": "ISC2" }
+        {
+          "code": "eCTHP",
+          "name": "Certified Threat Hunting Professional",
+          "issuer": "INE"
+        },
+        {
+          "code": "eCDFP",
+          "name": "Certified Digital Forensics Professional",
+          "issuer": "INE"
+        },
+        {
+          "code": "SSCP",
+          "name": "Systems Security Certified Practitioner",
+          "issuer": "ISC2"
+        }
       ]
     },
     {
       "id": "foundations",
       "label": "Foundations & AI",
       "items": [
-        { "code": "Rapid App Dev with LLMs", "name": "Rapid Application Development with LLMs", "issuer": "NVIDIA DLI" },
-        { "code": "Cybersecurity Professional", "name": "Google Cybersecurity Professional Certificate", "issuer": "Google" },
-        { "code": "Cybersecurity Analyst", "name": "IBM Cybersecurity Analyst Specialization", "issuer": "IBM" },
-        { "code": "Cybersecurity Analyst", "name": "Microsoft Cybersecurity Analyst Specialization", "issuer": "Microsoft" }
+        {
+          "code": "Rapid App Dev with LLMs",
+          "name": "Rapid Application Development with LLMs",
+          "issuer": "NVIDIA DLI"
+        },
+        {
+          "code": "Cybersecurity Professional",
+          "name": "Google Cybersecurity Professional Certificate",
+          "issuer": "Google"
+        },
+        {
+          "code": "Cybersecurity Analyst",
+          "name": "IBM Cybersecurity Analyst Specialization",
+          "issuer": "IBM"
+        },
+        {
+          "code": "Cybersecurity Analyst",
+          "name": "Microsoft Cybersecurity Analyst Specialization",
+          "issuer": "Microsoft"
+        }
       ]
     }
   ],
