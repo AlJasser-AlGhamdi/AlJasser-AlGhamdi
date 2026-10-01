@@ -5,7 +5,7 @@ import { createGlyphRun, wrapLines, measure } from './lib/text.mjs';
 import { svgDoc, theme, r2 } from './lib/svg.mjs';
 
 const L = {
-  desktop: { W: 1200, cols: 2, padX: 32, rankX: 32, rankSize: 34, textX: 168, textW: 400, eventSize: 22, detailSize: 12, detailLh: 17, rowH: 92, padTop: 12, padBottom: 12 },
+  desktop: { W: 1200, cols: 2, padX: 32, rankX: 32, rankSize: 36, textX: 168, textW: 400, eventSize: 23, detailSize: 13.5, detailLh: 18, rowH: 94, padTop: 12, padBottom: 12 },
   mobile: { W: 390, cols: 1, padX: 16, rankX: 16, rankSize: 26, textX: 112, textW: 262, eventSize: 17, eventLh: 20, detailSize: 10.5, detailLh: 15, padTop: 8, padBottom: 8 },
 };
 
